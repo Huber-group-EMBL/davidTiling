@@ -1,10 +1,10 @@
 Package: davidTiling
-Version: 1.2.2
+Version: 1.2.3
 Title: Data and analysis scripts for David, Huber et al. yeast tiling array paper
 Author: Wolfgang Huber <huber@ebi.ac.uk>, Joern Toedling <toedling@ebi.ac.uk>
 Maintainer: Wolfgang Huber <huber@ebi.ac.uk>
 Depends: R (>= 2.5.0), Biobase, tilingArray (>= 1.13.6), GO
-Description: This package contains the data for the paper cited below: 8 CEL files of Affymetrix genechips, the eSet object, a probe annotation data structure for the chip, and the yeast genome annotation (GFF file) that was used. In addition, some custom-written analysis functions are provided, as well as R scripts in the scripts directory.
+Description: This package contains the data for the paper cited below: 8 CEL files of Affymetrix genechips, an ExpressionSet object with the raw feature data, a probe annotation data structure for the chip and the yeast genome annotation (GFF file) that was used. In addition, some custom-written analysis functions are provided, as well as R scripts in the scripts directory.
 biocViews: ExperimentData
 Reference: A high-resolution map of transcription in the yeast genome, Lior David, Wolfgang Huber, Marina Granovskaia, Joern Toedling, Curtis J. Palm, Lee Bofkin, Ted Jones, Ronald W. Davis, Lars M. Steinmetz.
 License: LGPL
