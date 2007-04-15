@@ -6,7 +6,7 @@
 \usage{data("davidTiling")}
 
 \format{Intensity data for 8 arrays. The
-\code{\link{phenoData}} slot contains the file names
+\code{\link[Biobase]{phenoData}} slot contains the file names
 and the nucleic acid type.}
 
 \description{
@@ -17,8 +17,8 @@ steps of 8 bases, separately for each strand of each chromosome. The
 two tiles for one chromosome (Watson and Crick strands) are offset by 4
 bases.
 
-Note that the class \code{\link{eSet}} was used instead of
-\code{\link{AffyBatch}} since the additional overhead of 'CDF
+Note that the class \code{\link[Biobase]{eSet}} was used instead of
+\code{\link[affy]{AffyBatch}} since the additional overhead of 'CDF
 environments' in the latter is not needed here.
 }
 
