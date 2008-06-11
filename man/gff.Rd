@@ -2,9 +2,9 @@
 \alias{data:gff}
 \alias{gff}
 \non_function{}
-\title{A data frame with genomic features of Saccharomyces cerevisiae}
+\title{Genomic features of Saccharomyces cerevisiae}
 \usage{data("gff")}
-\description{}
+\description{A data frame with genomic features of Saccharomyces cerevisiae.}
 
 \format{Object of class \code{data.frame}.
 GFF is a file format for annotating genomes, see <insert the URL to
