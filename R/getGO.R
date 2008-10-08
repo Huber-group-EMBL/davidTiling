@@ -1,6 +1,5 @@
 
 getAllGO = function(x, gff) {
-  require("GO")
 
   ## create environment of ancestors
   e = new.env(hash=TRUE)
