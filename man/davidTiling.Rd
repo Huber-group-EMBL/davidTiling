@@ -17,9 +17,9 @@ steps of 8 bases, separately for each strand of each chromosome. The
 two tiles for one chromosome (Watson and Crick strands) are offset by 4
 bases.
 
-Note that the class \code{\link[Biobase]{eSet}} was used instead of
-\code{\link[affy]{AffyBatch}} since the additional overhead of 'CDF
-environments' in the latter is not needed here.
+Note that the class \code{\link[Biobase:class.eSet]{eSet}} was used instead of
+\code{\link[affy:AffyBatch-class]{AffyBatch}} since the additional
+overhead of 'CDF environments' in the latter is not needed here.
 }
 
 \source{
