@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<title>A high-resolution map of transcription in the yeast genome</title>
+<meta http-equiv="Owner" content= "EMBL Outstation - Hinxton, European Bioinformatics Institute" />
+<meta name="Author" content="Joern Toedling" />
+<link rel="stylesheet" href="http://www.ebi.ac.uk/services/include/stylesheet.css" type="text/css" />
+<link rel="shortcut icon" href="http://www.ebi.ac.uk/bookmark.ico" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript"  src="http://www.ebi.ac.uk/include/master.js"></script>
+<script type="text/javascript">
+<!--
+var emailaddress="toedling";
+if (top != self){
+    top.location.href = location.href;
+   }
+// -->
+</script>
+</head>
+<body  marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" onLoad="EbiPreloadImages('information');">
+
+<!-- ############# see headers below for place to edit ################### -->
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0"  class = "tabletop">
+	  <tr>
+	    <td width="270" height="65" align = "right"><a href="http://www.ebi.ac.uk/"><img  src="http://www.ebi.ac.uk/services/images/ebi_banner_1b.jpg" alt="EBI Home Page" width="270" height="65" border="0" /></a></td>
+		<td valign = "top" align = "right" width = "100%"><table border = "0" cellspacing="0" cellpadding="0" class = "tabletop" width = "100%" height="65">
+              <tr> 
+                <td valign = "top" align = "right" colspan="2"><table border = "0" cellspacing="0" cellpadding="0" height = "28" class = "tablehead">
+                    <tr> 
+                      <td   class = "tablehead"  align = "left" valign = "bottom"><img alt="Image" src="http://www.ebi.ac.uk/services/images/top_corner.gif" width="28" height="28" /></td>
+                        <form name = "Text1293FORM" action = "javascript:querySRS(document.forms[0].db[document.forms[0].db.selectedIndex].value, document.forms[0].qstr.value)" method = "post">
+                        <td align = "center" valign = "middle"   class = "small" nowrap><span class = "smallwhite"><nobr>Get&nbsp;</nobr></span></td>
+                        <td align = "center" valign = "middle"   class = "small"><span class = "small"><select  id = "FormsComboBox2" name = "db" class = "small">
+                            <option value = "EMBL" selected >Nucleotide sequences</option>
+							<option value = "SQUID">Protein sequences</option>
+							<option value = "PDB">Protein structures</option>
+							<option value = "INTERPRO">Protein signatures</option>
+							<option value = "MEDLINE">Literature</option>
+							<option value = "UNIPROT">Protein seq's [SRS]</option>
+                          </select></span></td>
+                        <td align = "center" valign = "middle"   class = "small" nowrap><span class = "smallwhite">&nbsp;for&nbsp;</span></td>
+                        <td align = "center" valign = "middle"   class = "small"><span class = "small"><input id = "FormsEditField3" maxlength = "50" size = "7" name = "qstr"  class = "small" /></span></td>
+                        <td align = "center" valign = "middle"   class = "small">&nbsp;</td>
+                        <td align = "center" valign = "middle"   class = "small"><span class = "small"><input id = "FormsButton3" type = "submit" value = "Go" name = "FormsButton1" class = "small" /></span></td>
+                        <td align = "center" valign = "middle"   class = "small" width="10" nowrap><a href = "#" class = "small2" onClick = "openWindow('http://www.ebi.ac.uk/help/DBhelp/dbhelp_frame.html'); return false;"><nobr>&nbsp;?&nbsp;</nobr></a></td>
+                      </form>
+                      <form name="google" action="http://www.google.com/u/ebi" method="get" onSubmit ="if (document.google.q.value=='') { alert('Please enter query.'); return false;}">
+						<input type="hidden" name="hq" value="inurl:www.ebi.ac.uk" />
+                        <td align = "center" valign = "middle"   class = "smallwhite" nowrap><span class = "smallwhite"><nobr>&nbsp;Site search&nbsp;</nobr></span></td>
+                        <td align = "center" valign = "middle"   class = "small"><span class = "small"><input id="FormsEditField4" type="text" maxlength="50" size="7" name="q" class="small" /></span></td>
+                        <td align = "center" valign = "middle"   class = "small">&nbsp;</td>
+                        <td align = "center" valign = "middle"   class = "small"><span class = "small"><input id="FormsButton2" type="submit" value="Go" name="sa" class="small" /></span></td>
+                        <td align = "center" valign = "middle"   class = "small" nowrap><nobr><a href = "#" class = "small2" onClick = "openWindow('http://www.ebi.ac.uk/help/help/sitehelp_frame.html'); return false;">&nbsp;?&nbsp;</a></nobr></td>
+                      </form>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td align = "left" valign = "bottom"><a href="http://www.ebi.ac.uk/"><img  src="http://www.ebi.ac.uk/services/images/ebi_banner_2b.jpg" alt="EBI Home Page" width="66" height="29" border="0" /></a></td>
+                <td align = "right" valign = "middle"><img alt="Image" src="http://www.ebi.ac.uk/services/images/thetopbar_b.gif" width="156" height="25" usemap="#Map" border="0" /></td>
+              </tr>
+            </table></td>
+	</tr>
+	<tr><td colspan = "2"><img alt="Image" src="http://www.ebi.ac.uk/services/images/trans.gif" width = "1" height = "5" /></td></tr>
+</table> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  class = "tabletop" >
+	<tr>
+		<td width = "100%"><table width="679" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','http://www.ebi.ac.uk/services/images/home_o.gif',1)"><img name="Image8" border="0" src="http://www.ebi.ac.uk/services/images/home.gif" width="97" height="18" /></a></td>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/Information/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','http://www.ebi.ac.uk/services/images/about_o.gif',1)"><img name="Image9" border="0" src="http://www.ebi.ac.uk/services/images/about.gif" width="97" height="18" /></a></td>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/Groups/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','http://www.ebi.ac.uk/services/images/research_o.gif',1)"><img name="Image10" border="0" src="http://www.ebi.ac.uk/services/images/research.gif" width="97" height="18" /></a></td>
+				<td width="97" height="18"><a href="http://www.ebi.ac.uk/services/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','http://www.ebi.ac.uk/services/images/services_o.gif',1)"><img name="Image11" border="0" src="http://www.ebi.ac.uk/services/images/services_o.gif" width="97" height="18" /></a></td>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/Tools/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','http://www.ebi.ac.uk/services/images/utilities_o.gif',1)"><img name="Image12" border="0" src="http://www.ebi.ac.uk/services/images/utilities.gif" width="97" height="18" /></a></td>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/Databases/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','http://www.ebi.ac.uk/services/images/databases_o.gif',1)"><img name="Image13" border="0" src="http://www.ebi.ac.uk/services/images/databases.gif" width="97" height="18" /></a></td>
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/FTP/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','http://www.ebi.ac.uk/services/images/downloads_o.gif',1)"><img name="Image14" border="0" src="http://www.ebi.ac.uk/services/images/downloads.gif" width="97" height="18" /></a></td> 
+                <td width="97" height="18"><a href="http://www.ebi.ac.uk/Submissions/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','http://www.ebi.ac.uk/services/images/submissions_o.gif',1)"><img name="Image15" border="0" src="http://www.ebi.ac.uk/services/images/submissions.gif" width="97" height="18" /></a></td>
+			</tr>
+		</table></td></tr>
+	<tr>
+		<td width="100%" height = "5"  class = "tablehead" ><table width="100%" height = "5"  border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width = "100%" height = "20" align = "center">
+<!-- InstanceBeginEditable name="topnav" --><nobr><a href="index.html" class = "white"><font size=+1>
+A high-resolution map of transcription in the yeast genome</font></a></nobr><!-- InstanceEndEditable --></td>
+              </tr>
+	      </table>
+	    </td>
+	  </tr>
+      </table>
+<!-- InstanceBeginEditable name="contents" -->
+<!-- #################  Contents: edit here ######################## -->
+
+<center>
+<h2>New Query</h2>
+Enter gene symbol &nbsp;<i>(e.g., RPS16A, GIM3, GCN4)</i><br>
+or chromosomal coordinate as chr:bp &nbsp;<i>(e.g., 13:552000)</i>
+<br><br>
+<form action="http://www.ebi.ac.uk/huber-srv/cgi-bin/viewYeastTilingArray.pl">
+ <input type="text" name="gene" SIZE=10 VALUE="">
+ <input type="submit" value="Submit">
+<!--  <br><br>
+ <input type="RADIO" name="showSamples" value="only2" CHECKED>
+    Poly(A)- and Total-RNA &nbsp;&nbsp;
+ <input type="RADIO" name="showSamples" value="all">
+   Include Additional Samples -->
+</form>
+<br><br><br><br><br>
+</center>
+<hr>
+
+<p><b>Segment tables:</b><br>
+<a href="genePagesPolyA/index.html">Poly(A) RNA</a> and
+<a href="genePagesTot/index.html">Total RNA</a>.<br><br>
+Please see  
+<a href="segmentTableDescription.html" target="Description">
+description</a> and the reference below.<br>
+Please be patient, the tables are large and take some time to load.
+
+<p>Reference:<br><a href="http://www.pnas.org/cgi/content/abstract/0601091103v1" target="PNAS">
+<b>A high-resolution map of transcription in the yeast genome</b>,
+Lior David<sup>*</sup>, Wolfgang Huber<sup>*</sup>, Marina Granovskaia, Joern Toedling, Curtis J. Palm, Lee Bofkin,
+Ted Jones, Ronald W. Davis, Lars M. Steinmetz. <i>PNAS</i> 28 March 2006</a>
+
+<p>Data:
+<ul>
+<li>At <a href="http://www.ebi.ac.uk/arrayexpress" target="ArrayExpress">ArrayExpress</a>, accession number E-TABM-14
+<li><a href="http://www.bioconductor.org/packages/data/experiment/1.8" target="davidTiling">
+Bioconductor Package davidTiling</a> (cel files, probe to genome mapping)
+<li><a href="Scerevisiaetilingprobe_1.1.0.tar.gz">Bioconductor Package 
+Scerevisiaetilingprobe version 1.1.0</a>
+<li><a href="S.cerevisiae_tiling.1lq" target="1lq">Affymetrix probe sequence file S.cerevisiae_tiling.1lq</a>
+</ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td align="right">
+<address><a href="mailto:toedling@ebi.ac.uk?subject=http://www.ebi.ac.uk/huber-srv/queryGene/">Joern Toedling</a></address>
+</td>
+</tr>
+</table>
+      
+</body>
+</html>
