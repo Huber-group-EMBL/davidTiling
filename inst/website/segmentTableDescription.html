@@ -1,0 +1,228 @@
+<html>
+<head>
+<title>Segmentation Tables Legend, David et al. PNAS 2006</title>
+<link rel=stylesheet href="myR2HTML.css" type=text/css>
+</head>
+<body>
+<h1>Segmentation Tables Legend</h1>
+
+<p>
+These tables list the segments resulting from the segmentation 
+of the probe-response normalized hybridization signal along 
+genomic coordinates. The segments are ordered by the category 
+they were assigned to. Each row holds the information for one segment.
+The columns are as follows:
+</p>
+
+<h3 id="plot">plot</h3>
+<p>links to the along-chromosome plot (in <code>jpg</code> and
+<code>pdf</code> format) containing the segment</p>
+
+<h3 id="segID">segID</h3>
+<p>unique integer identifier for each segment. The counting starts at 1, 
+corresponding to the most 5' segment on the "+"-strand of chromosome 1.</p>
+
+
+<a name="chr"></a>
+<a name="strand"></a>
+<h3>chr, strand</h3>
+<p>chromosome and strand</p>
+
+<h3 id="start">start</h3>
+<p>coordinate of the first base of the first probe belonging to the
+segment. The coordinate system is such that 1 is the 5' terminal base 
+of the chromosome's "+" strand.
+Note that <i>start</i> corresponds to the 5' end of a segment if it is on the "+" strand, 
+and to the 3' end if it is on the "-" strand.</p>
+
+<h3 id="end">end</h3>
+<p>coordinate of the last base of the last probe belonging to the
+segment.
+Note that <i>end</i> corresponds to the 3' end of a segment if it is on the "+" strand, 
+and to the 5' end if it is on the "-" strand
+</p>
+
+<h3 id="length">length</h3>
+<p>end-start+1</p>
+
+<h3 id="frac.dup">frac.dup</h3>
+<p>fraction of probes with multiple hits in the genome (aka "non-unique probes")</p>
+
+<h3 id="level">level</h3>
+<p>mean expression level over all unique probes in the segment</p>
+
+
+<h3 id="category">category</h3>
+<p>categorization based on overlap with annotated genomic features and
+<i>level</i>. If a segment overlapped multiple genomic features, in
+order to assign it to a single category, a
+<i>trumping order</i> was used as described in the paper.
+
+<dl><dd> <!--indent-->
+<dl>
+
+<dt>verified gene</dt>
+<dd>segment overlaps a verified ORF </dd>
+
+<dt>uncharacterized gene</dt>
+<dd>segment overlaps an annotated but uncharacterized ORF </dd>
+
+<dt>dubious gene</dt>
+<dd>segment overlaps a dubious ORF</dd>
+
+<dt>pseudogene</dt>
+<dd>segment overlaps a pseudogene</dd>
+
+<dt>transposable_element</dt>
+<dd>segment overlaps a transposable element</dd>
+
+<dt>rRNA</dt>
+<dd>segment overlaps a ribosomal RNA</dd>
+
+<dt>snoRNA</dt>
+<dd>segment overlaps a small nucleolar RNA</dd>
+
+<dt>snRNA</dt>
+<dd>segment overlaps a small nuclear RNA</dd>
+
+<dt>tRNA</dt>
+<dd>segment overlaps a transfer RNA</dd>
+
+<dt>ncRNA</dt>
+<dd>segment overlaps a non-coding RNA</dd>
+
+<dt>repeat_region</dt>
+<dd>segment overlaps a genomic region containing tandem
+repeats</dd>
+
+<dt>unannotated isolated - filtered</dt>
+<dd>segment does not overlap any annotated genomic feature and meets the
+filter criteria <i>(see manuscript and supplementary material)</i></dd>
+
+<dt>unannotated isolated - unassigned</dt>
+<dd>segment does not overlap any annotated genomic feature and does
+not  meet the filter criteria.</dd>
+
+<dt>unannotated antisense - filtered</dt>
+<dd>segment does not overlap any annotated genomic feature on same strand but
+is located opposite to an annotated ORF on the other strand. 
+In addition, it meets the filter criteria.</dd>
+
+<dt>unannotated antisense - unassigned</dt>
+<dd>segment does not overlap any annotated genomic feature on same strand, 
+but is located opposite to an annotated ORF on the other strand.
+It does not meet the filter criteria.</dd>
+
+<dt>excluded</dt>
+<dd>due to too many non-unique probes the segement was excluded from
+further analyses</dd>
+
+<dt>untranscribed</dt>
+<dd>segment was not measured as being transcribed</dd>
+
+</dl>
+</dd></dl>  <!--- stop indenting -->
+</p>
+
+
+<h3 id="overlap">overlap</h3>
+<p>percentage of annotated (SGD) genomic feature that is overlapped by the segment.</p>
+
+<h3 id="overlappingFeature">overlappingFeature</h3>
+<p>names of genomic features, on the same strand, overlapped by probes in the segment</p>
+
+<h3 id="oppositeFeature">oppositeFeature</h3>
+<p>names of genomic features on the opposite strand facing probes
+ in the segment</p>
+
+<a name="utr3"></a>
+<a name="utr5"></a>
+<h3>utr5, utr3</h3>
+<p>number of bases in the segment exceeding the 5' (resp. 3') end of an annotated 
+ORF, this is used as the estimate for the length of the 5' (resp. 3') UTR. 
+Only exists if the segment overlaps an annotated ORF and the segment boundary meets filter criteria.
+Otherwise, it is <code>NA</code> (Not Available).</p>
+
+<a name="z3"></a>
+<a name="z5"></a>
+<h3>z3, z5</h3>
+<p><i>z</i>-scores for the 3' and 5' flanks of the segment. They are calculated as the 
+difference between the segment's <i>level</i> and the mean of the signal from the 10 
+neighboring probes immediately next to the segment, but fully outside, 
+divided by their standard deviation. If the 10 probes would reach beyond the neighboring 
+segment, this number is reduced so that all probes are within the neighboring segment. 
+Note that the standard deviation of the signal within the segment is not considered here.
+</p>
+
+<h3 id="featureInSegment">featureInSegment</h3>
+<p>annotated genomic features fully contained in the segment</p>
+
+<h3 id="mostOfFeatureInSegment">mostOfFeatureInSegment</h3>
+<p>annotated genomic features contained to more than 50% in the segment</p>
+
+<h3 id="overlapFeatAll">overlapFeatAll</h3>
+<p>genomic features partly or fully contained in the segment</p>
+
+<h3 id="oppositeExpression">oppositeExpression</h3>
+<p>mean expression level over all probes on the opposite strand of
+that segment. <code>NA</code> (Not available) in the case that on the
+opposite strand there is less than one full probe located between segment
+start and end position</p>
+
+<a name="dist3">
+<a name="dist5">
+<h3>dist5, dist3</h3>
+<p>distance to nearest 5' (3') annotated genomic feature on the same strand and 
+not contained in the segment</p>
+
+<h3 id="simpleCatg">simpleCatg</h3>
+<p>Simplified version of the <i>category</i> column, obtained
+by collapsing related groups.
+
+<dl><dd>  <!-- indent -->
+<dl>
+
+<dt>annotated ORF</dt>
+<dd>segment overlaps an annotated ORF </dd>
+
+<dt>ncRNA(all)</dt>
+<dd>segment overlaps an annotated non-coding RNA</dd>
+
+<dt>dubious gene</dt>
+<dd>segment overlaps a dubious gene</dd>
+
+<dt>unannotated isolated - filtered</dt>
+<dd>segment does not overlap any annotated genomic feature and meets the
+quality filter criteria <i>(see manuscript and supplementary material)</i></dd>
+
+<dt>unannotated isolated - unassigned</dt>
+<dd>segment does not overlap any annotated genomic feature and does
+not  meet the quality criteria</dd>
+
+<dt>unannotated antisense - filtered</dt>
+<dd>segment does not overlap any annotated genomic feature on the same strand,
+but is opposite an annotated ORF on the other strand. 
+In addition, the segment meets the quality criteria.</dd>
+
+<dt>unannotated antisense - unassigned</dt>
+<dd>segment does not overlap any annotated genomic feature on the same strand,
+but is opposite an annotated ORF on the other strand.
+The segment does not  meet the quality criteria.</dd>
+
+<dt>excluded</dt>
+<dd>due to too many non-unique probes (frac.dup>0.5) the segment was excluded from
+the analysis.</dd>
+
+<dt>untranscribed</dt>
+<dd>segment was not measured as being transcribed.</dd>
+
+</dl>
+</dd></dl> <!-- end indenting -->
+</p>
+
+<hr>
+<a href="mailto:huber@ebi.ac.uk?subject=segmentTableDescription.html">Wolfgang Huber</a>
+
+</body>
+
+</html>
