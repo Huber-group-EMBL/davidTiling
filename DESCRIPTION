@@ -1,5 +1,5 @@
 Package: davidTiling
-Version: 1.36.0
+Version: 1.37.0
 Title: Data and analysis scripts for David, Huber et al. yeast tiling array paper
 Author: Wolfgang Huber <huber@ebi.ac.uk>, Joern Toedling <toedling@ebi.ac.uk>
 Maintainer: Wolfgang Huber <huber@ebi.ac.uk>
