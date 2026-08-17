@@ -1,5 +1,5 @@
 Package: davidTiling
-Version: 1.53.0
+Version: 1.53.1
 Title: Data and analysis scripts for David, Huber et al. yeast tiling array paper
 Authors@R: c(
     person("Wolfgang", "Huber", email = "wolfgang.huber@embl.org", role = c("aut", "cre")),
