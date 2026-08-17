@@ -9,3 +9,4 @@ biocViews: ExperimentData, Genome, Saccharomyces_cerevisiae_Data, MicroarrayData
 Reference: A high-resolution map of transcription in the yeast genome. David L, Huber W, Granovskaia M, Toedling J, Palm CJ, Bofkin L, Jones T, Davis RW, Steinmetz LM. Proc Natl Acad Sci U S A. 2006 Apr 4;103(14):5320-5. 
 License: LGPL
 URL: http://www.ebi.ac.uk/huber
+BuildResaveData: no
